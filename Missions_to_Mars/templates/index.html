@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Mission to Mars</title>
+</head>
+
+<body class="bg-light">
+  <div class="container">
+    <div class="jumbotron text-center">
+      <h1 class="display-2 font-weight-bold">Mission to Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="heading font-weight-bold">Latest Mars News</h2>
+        <h5 class="heading font-weight-bold">{{scrape_data_dict.news_title}}</h5>
+        <p>{{scrape_data_dict.news_p}}</p>
+      </div>
+    </div>
+    
+    <div class="row">  
+      <div class="col-md-8">
+        <h2 class="heading font-weight-bold mt-2">Featured Mars Image</h2>
+          <img src={{scrape_data_dict.featured_image_url[0]}} class = "img-fluid" alt="featured image">
+        </div>
+      <div class="col-md-4">
+        <h5 class="heading font-weight-bold mt-3">Mars Facts</h5>
+        <div class="table-responsive table-striped table-bordered p-1">
+          {{scrape_data_dict.table_html|safe}}
+        </div>
+      </div>
+    </div>  
+
+    <div class="row">
+      <div class="col-md-12">
+        <div>
+        <h2 class="heading font-weight-bold text-center mt-5">Mars Hemispheres</h2>
+        <hr>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+      <div class="p-1 border border-secondary">
+        <img src={{scrape_data_dict.hemisphere_image_url[0].img_url}} class="img-fluid" alt="image1">
+        <p class="font-weight-bold p-1 text-center" style="font-size:20px">{{scrape_data_dict.hemisphere_image_url[0].title}}</p>
+      </div>
+      </div>
+      <div class="col-md-6">
+      <div class="p-1 border border-secondary">
+        <img src={{scrape_data_dict.hemisphere_image_url[1].img_url}} class="img-fluid" alt="image2">
+        <p class="font-weight-bold p-1 text-center" style="font-size:20px">{{scrape_data_dict.hemisphere_image_url[1].title}}</p>
+      </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-6">
+      <div class="p-1 mt-4 border border-secondary">
+        <img src={{scrape_data_dict.hemisphere_image_url[2].img_url}} class="img-fluid" alt="image3">
+        <p class="font-weight-bold p-1 text-center" style="font-size:20px">{{scrape_data_dict.hemisphere_image_url[2].title}}</p>
+      </div>
+      </div>
+      <div class="col-md-6">
+      <div class="p-1 mt-4 border border-secondary">
+        <img src={{scrape_data_dict.hemisphere_image_url[3].img_url}} class="img-fluid" alt="image4">
+        <p class="font-weight-bold p-1 text-center" style="font-size:20px">{{scrape_data_dict.hemisphere_image_url[3].title}}</p>
+      </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
