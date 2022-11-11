@@ -15,7 +15,7 @@ https://marshemispheres.com/
 
 Jupyter Notebook, BeautifulSoup, Splinter, Pandas, MongoDB, Flask, HTML
 
-## Application
+## Application Screenshots
 
 ![screenshot_1of3.png](image/screenshot_1of3.png) 
 
