@@ -6,10 +6,10 @@ To build a web application that scrapes various websites for data related to the
 
 ## Data Source
 
-https://redplanetscience.com/
-https://spaceimages-mars.com/
-https://galaxyfacts-mars.com/
-https://marshemispheres.com/
+- https://redplanetscience.com/
+- https://spaceimages-mars.com/
+- https://galaxyfacts-mars.com/
+- https://marshemispheres.com/
 
 ## Tools
 
